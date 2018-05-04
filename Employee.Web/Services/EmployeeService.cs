@@ -6,7 +6,7 @@ namespace Employee.Web.Services
 {
     public class EmployeeService : IEmployeeService
     {
-        private IEmployeeRepository _repository;
+        private IEmployeeRepository _repository;;
 
         public EmployeeService(IEmployeeRepository repository)
         {
