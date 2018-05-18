@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: employee
+spec:
+  selector:
+    matchLabels:
+      app: Employee.Web
+  template:
+    metadata:
+      labels:
+        app: Employee.Web
+    spec:
+      containers:
+      - name: employeeservice
+        image: eu.gcr.io/logward-204209/employeeweb
+        ports:
+        - containerPort: 80

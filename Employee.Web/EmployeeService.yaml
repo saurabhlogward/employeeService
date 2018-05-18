@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: employee-service
+spec:
+  selector:
+    app: Employee.Web
+  ports:
+  - port: 80
+    targetPort: 8080

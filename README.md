@@ -5,10 +5,9 @@ This is a simple dotnet core based REST api which uses postgres as a backend and
 $ CREATE DATABASE employeedb //Note that the user used for this db is postgres with password also as postgress
 $ CREATE TABLE employee
 (
-  id integer NOT NULL,
+  id serial PRIMARY KEY,
   name character(50) NOT NULL,
-  salary integer NOT NULL,
-  CONSTRAINT employee_pkey PRIMARY KEY (id)
+  salary integer NOT NULL
 )
 
 # To build and run the api
